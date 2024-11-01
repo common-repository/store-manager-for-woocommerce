@@ -1,0 +1,174 @@
+Badge api Dcumentation: 
+
+1. Get All Badges
+    Endpoint: {base_route}/wp-json/smx/v1/badges
+    Method: GET
+    Description: Retrieves a list of badges.
+
+    Response Demo: [
+        {
+            "id": "56",
+            "badge_name": "Top-selling-11",
+            "badge_type": "image",
+            "filter": "all",
+            "badge_style": "<h1>all</h1>",
+            "badge_settings": {
+                "display": "flex",
+                "justify_content": "center"
+            }
+            "priority": "1",
+            "status": "1",
+            "created_by": "1",
+            "valid_from": "2024-09-09T12:18:30+00:00",
+            "valid_to": "2025-09-25T02:18:30+00:00",
+            "created_at": "2024-09-25 00:51:47",
+            "updated_at": "2024-09-25 00:51:47",
+            "_links": {
+                "self": [
+                    {
+                        "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges/56"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "57",
+            "badge_name": "Top-selling-11",
+            "badge_type": "image",
+            "filter": "all",
+            "badge_style": "<h1>few</h1>",
+            "badge_settings": {
+                "display": "flex",
+                "justify_content": "center"
+            },
+            "priority": "2",
+            "status": "1",
+            "created_by": "1",
+            "valid_from": "2024-09-09T12:18:30+00:00",
+            "valid_to": "2025-09-25T02:18:30+00:00",
+            "created_at": "2024-09-25 00:52:13",
+            "updated_at": "2024-09-25 00:52:13",
+            "_links": {
+                "self": [
+                    {
+                        "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges/57"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges"
+                    }
+                ]
+            }
+        }
+    ]
+
+2. Get a Badges
+    Endpoint: {base_route}/wp-json/smx/v1/badges/{badge_id}
+    Method: GET
+    Description: Retrieve single badges.
+
+    Response Demo: 
+    {
+        "id": "56",
+        "badge_name": "Top-selling-11",
+        "badge_type": "image",
+        "filter": "all",
+        "badge_style": "<h1>all</h1>",
+        "badge_settings": {
+            "display": "flex",
+            "justify_content": "center"
+        },
+        "priority": "1",
+        "status": "1",
+        "created_by": "1",
+        "valid_from": "2024-09-09T12:18:30+00:00",
+        "valid_to": "2025-09-25T02:18:30+00:00",
+        "created_at": "2024-09-25 00:51:47",
+        "updated_at": "2024-09-25 00:51:47",
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges/56"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost/shop-manager-x/wp-json/smx/v1/badges"
+                }
+            ]
+        }
+    }
+
+3. Create a badge
+    Endpoint: {base_route}/wp-json/smx/v1/badges
+    Method: POST
+    Description: Create a badge.
+    Request Params: 
+        * badge_name (string): Filter badges by name.
+        * badge_type (string): Filter badges by type.
+        * filter (mixed): Filter data (string/array/integer).
+        * badge_style (string): Filter by badge style.
+        * badge_settings (object): Badge settings object.
+        * priority (optional, integer): Filter by priority level.
+        * status (optional,integer): Filter by badge status.
+        * valid_from (optional,string, date): Filter badges valid from a specific date.
+        * valid_to (optional, string, date): Filter badges valid to a specific date.
+     
+    ** Params Example **
+    {
+        "badge_name": "Top-selling",
+        "badge_type": "image",
+        "filter": "all", // it can be integer or array of object for few products
+        "badge_style": "<h1>Top Selling</h1>",
+        "badge_settings": {
+            "display": "flex",
+            "justify-content": "center"
+        }
+        "valid_from": "2024-09-09T12:18:30+00:00",
+        "valid_to": "2025-09-25T02:18:30+00:00"
+    }
+
+    #####################################################
+    ########### Filter Params Example ###################
+    #####################################################
+    
+    Use below end point for search product
+    
+    End Point: wp-json/smx/v1/search/product?search=product_name
+
+    "filter": [
+        {
+            "id": 16,
+            "name": "T-Shirt",
+            "sku": "woo-tshirt",
+            "image": "http://localhost/shop-manager-x/wp-content/uploads/2024/05/tshirt-2.jpg"
+        },
+        {
+            "id": 33,
+            "name": "T-Shirt with Logo",
+            "sku": "Woo-tshirt-logo",
+            "image": "http://localhost/shop-manager-x/wp-content/uploads/2024/05/t-shirt-with-logo-1.jpg"
+        },
+        {
+            "id": 13,
+            "name": "V-Neck T-Shirt",
+            "sku": "woo-vneck-tee",
+            "image": "http://localhost/shop-manager-x/wp-content/uploads/2024/05/vneck-tee-2.jpg"
+        }
+    ]
+
+4. Update a badge: 
+    Endpoint: {base_route}/wp-json/smx/v1/badges/badge_id
+    Method: PUT
+    Description: Update a badge.
+
+5. Delete a badge: 
+    Endpoint: {base_route}/wp-json/smx/v1/badges/badge_id
+    Method: Delete
+    Description: Delete a badge.

@@ -1,0 +1,108 @@
+{
+    "badges": {
+        "Halloween": [
+            {
+                "name": "Halloween-10",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/Halloween-10.svg"
+            },
+            {
+                "name": "halloween-11",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-11.svg"
+            },
+            {
+                "name": "halloween-1",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-1.svg"
+            },
+            {
+                "name": "halloween-2",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-2.svg"
+            },
+            {
+                "name": "halloween-3",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-3.svg"
+            },
+            {
+                "name": "halloween-4",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-4.svg"
+            },
+            {
+                "name": "halloween-5",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-5.svg"
+            },
+            {
+                "name": "halloween-6",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-6.svg"
+            },
+            {
+                "name": "halloween-7",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-7.svg"
+            },
+            {
+                "name": "halloween-8",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-8.svg"
+            },
+            {
+                "name": "halloween-9",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Halloween\/halloween-9.svg"
+            }
+        ],
+        "Sale": [
+            {
+                "name": "sale-10",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-10.svg"
+            },
+            {
+                "name": "sale-11",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-11.svg"
+            },
+            {
+                "name": "sale-12",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-12.svg"
+            },
+            {
+                "name": "sale-13",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-13.svg"
+            },
+            {
+                "name": "sale-14",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-14.svg"
+            },
+            {
+                "name": "sale-1",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-1.svg"
+            },
+            {
+                "name": "sale-2",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-2.svg"
+            },
+            {
+                "name": "sale-3",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-3.svg"
+            },
+            {
+                "name": "sale-4",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-4.svg"
+            },
+            {
+                "name": "sale-5",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-5.svg"
+            },
+            {
+                "name": "sale-6",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-6.svg"
+            },
+            {
+                "name": "sale-7",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-7.svg"
+            },
+            {
+                "name": "sale-8",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-8.svg"
+            },
+            {
+                "name": "sale-9",
+                "src": "backend\/views\/assets\/badge\/badge-images\/Sale\/sale-9.svg"
+            }
+        ]
+    }
+}
